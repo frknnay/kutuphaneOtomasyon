@@ -1,1 +1,2 @@
 E:\furkan\C#\Projects\kutuphaneOtomasyon\kutuphaneOtomasyon\kutuphaneOtomasyon\bin\Debug\kutuphaneOtomasyon.exe.config
+E:\furkan\C#\Projects\kutuphaneOtomasyon\kutuphaneOtomasyon\bin\Debug\kutuphaneOtomasyon.exe.config

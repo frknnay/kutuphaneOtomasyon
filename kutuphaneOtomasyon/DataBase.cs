@@ -9,9 +9,9 @@ using MySql.Data.MySqlClient;
     Author: Furkan Ay
 */
 
-namespace kutuphaneTakip
+namespace kutuphaneOtomasyon
 {
-    class Mysql
+    class DataBase
     {
         private string server = "localhost";
         private string user = "root";
