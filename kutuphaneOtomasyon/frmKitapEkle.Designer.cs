@@ -34,8 +34,9 @@
             this.button1 = new System.Windows.Forms.Button();
             this.txtKitapAdi = new System.Windows.Forms.TextBox();
             this.cmbYazar = new System.Windows.Forms.ComboBox();
-            this.txtSayfaSayisi = new System.Windows.Forms.TextBox();
             this.btnCikis = new System.Windows.Forms.Button();
+            this.nupSayfaSayisi = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.nupSayfaSayisi)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -94,13 +95,6 @@
             this.cmbYazar.Size = new System.Drawing.Size(161, 21);
             this.cmbYazar.TabIndex = 5;
             // 
-            // txtSayfaSayisi
-            // 
-            this.txtSayfaSayisi.Location = new System.Drawing.Point(136, 127);
-            this.txtSayfaSayisi.Name = "txtSayfaSayisi";
-            this.txtSayfaSayisi.Size = new System.Drawing.Size(161, 20);
-            this.txtSayfaSayisi.TabIndex = 6;
-            // 
             // btnCikis
             // 
             this.btnCikis.Location = new System.Drawing.Point(204, 191);
@@ -111,13 +105,25 @@
             this.btnCikis.UseVisualStyleBackColor = true;
             this.btnCikis.Click += new System.EventHandler(this.btnCikis_Click);
             // 
+            // nupSayfaSayisi
+            // 
+            this.nupSayfaSayisi.Location = new System.Drawing.Point(136, 127);
+            this.nupSayfaSayisi.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.nupSayfaSayisi.Name = "nupSayfaSayisi";
+            this.nupSayfaSayisi.Size = new System.Drawing.Size(161, 20);
+            this.nupSayfaSayisi.TabIndex = 9;
+            // 
             // frmKitapEkle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(418, 338);
+            this.ClientSize = new System.Drawing.Size(358, 334);
+            this.Controls.Add(this.nupSayfaSayisi);
             this.Controls.Add(this.btnCikis);
-            this.Controls.Add(this.txtSayfaSayisi);
             this.Controls.Add(this.cmbYazar);
             this.Controls.Add(this.txtKitapAdi);
             this.Controls.Add(this.button1);
@@ -125,8 +131,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "frmKitapEkle";
-            this.Text = "Kitap Kayıt";
+            this.Text = "Kitap Ekle";
             this.Load += new System.EventHandler(this.frmKitapEkle_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.nupSayfaSayisi)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -140,7 +147,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtKitapAdi;
         private System.Windows.Forms.ComboBox cmbYazar;
-        private System.Windows.Forms.TextBox txtSayfaSayisi;
         private System.Windows.Forms.Button btnCikis;
+        private System.Windows.Forms.NumericUpDown nupSayfaSayisi;
     }
 }

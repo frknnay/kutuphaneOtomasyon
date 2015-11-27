@@ -39,17 +39,38 @@ namespace kutuphaneOtomasyon
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (txtKitapAdi.Text == "" || cmbYazar.Text == "")
+            {
+                MessageBox.Show("Lütfen verilen alanları doldurunuz!");
+                return;
+            }
+
             db.Open();
             var cmd = db.Command();
             cmd.CommandText = "insert into kitap (kitap_adi,yazar_id,kitap_sayfa_sayisi) values(@kitapAdi,@yazarId,@sayfaSayisi)";
             cmd.Prepare();
             cmd.Parameters.AddWithValue("@kitapAdi", txtKitapAdi.Text);
             cmd.Parameters.AddWithValue("@yazarId", yazar[cmbYazar.Text]);
-            cmd.Parameters.AddWithValue("@sayfaSayisi", int.Parse(txtSayfaSayisi.Text));
-            cmd.ExecuteNonQuery();
-            db.Close();
-            MessageBox.Show("Kitap ekleme işlemi başarılı.");
+            cmd.Parameters.AddWithValue("@sayfaSayisi", nupSayfaSayisi.Value);
 
+            try
+            {
+
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Kitap ekleme işlemi başarılı.");
+            }
+            catch (MySqlException myEx)
+            {
+
+                MessageBox.Show("Kayıt veritabanına eklenirken bir hata oluştu.\n{0}", myEx.Message);
+            }
+            finally
+            {
+                db.Close();
+            }
+            nupSayfaSayisi.Value = 0; ;
+            txtKitapAdi.Text = "";
+            cmbYazar.SelectedIndex = -1;
         }
 
         private void btnCikis_Click(object sender, EventArgs e)

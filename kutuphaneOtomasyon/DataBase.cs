@@ -56,6 +56,10 @@ namespace kutuphaneOtomasyon
             cmd.Connection = conn;
             return cmd;
         }
+        public MySqlDataReader Reader()
+        {
+            return reader;
+        }
 
         //public MySqlDataReader Select(string column, string table)
         //{
