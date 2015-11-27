@@ -1,2 +1,11 @@
 E:\furkan\C#\Projects\kutuphaneOtomasyon\kutuphaneOtomasyon\kutuphaneOtomasyon\bin\Debug\kutuphaneOtomasyon.exe.config
 E:\furkan\C#\Projects\kutuphaneOtomasyon\kutuphaneOtomasyon\bin\Debug\kutuphaneOtomasyon.exe.config
+E:\furkan\C#\Projects\kutuphaneOtomasyon\kutuphaneOtomasyon\bin\Debug\kutuphaneOtomasyon.exe
+E:\furkan\C#\Projects\kutuphaneOtomasyon\kutuphaneOtomasyon\bin\Debug\kutuphaneOtomasyon.pdb
+E:\furkan\C#\Projects\kutuphaneOtomasyon\kutuphaneOtomasyon\obj\Debug\kutuphaneOtomasyon.csprojResolveAssemblyReference.cache
+E:\furkan\C#\Projects\kutuphaneOtomasyon\kutuphaneOtomasyon\obj\Debug\kutuphaneOtomasyon.Form1.resources
+E:\furkan\C#\Projects\kutuphaneOtomasyon\kutuphaneOtomasyon\obj\Debug\kutuphaneOtomasyon.Properties.Resources.resources
+E:\furkan\C#\Projects\kutuphaneOtomasyon\kutuphaneOtomasyon\obj\Debug\kutuphaneOtomasyon.csproj.GenerateResource.Cache
+E:\furkan\C#\Projects\kutuphaneOtomasyon\kutuphaneOtomasyon\obj\Debug\kutuphaneOtomasyon.exe
+E:\furkan\C#\Projects\kutuphaneOtomasyon\kutuphaneOtomasyon\obj\Debug\kutuphaneOtomasyon.pdb
+E:\furkan\C#\Projects\kutuphaneOtomasyon\kutuphaneOtomasyon\obj\Debug\kutuphaneOtomasyon.frmKitapEkle.resources

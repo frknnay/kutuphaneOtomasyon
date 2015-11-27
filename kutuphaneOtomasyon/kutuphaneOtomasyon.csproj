@@ -52,9 +52,21 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Mysql.cs" />
+    <Compile Include="DataBase.cs" />
+    <Compile Include="frmKitapEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKitapEkle.Designer.cs">
+      <DependentUpon>frmKitapEkle.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKitapEkle.resx">
+      <DependentUpon>frmKitapEkle.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

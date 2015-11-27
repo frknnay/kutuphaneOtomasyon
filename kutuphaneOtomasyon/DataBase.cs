@@ -50,14 +50,21 @@ namespace kutuphaneOtomasyon
             }
         }
 
-        public MySqlDataReader Select(string query)
+        public MySqlCommand Command()
         {
             cmd = new MySqlCommand();
             cmd.Connection = conn;
-            cmd.CommandText = query;
-            reader = cmd.ExecuteReader();
-            return this.reader;
+            return cmd;
         }
+
+        //public MySqlDataReader Select(string column, string table)
+        //{
+        //    cmd = new MySqlCommand();
+        //    cmd.Connection = conn;
+        //    cmd.CommandText = "select " + column + " from" + table;
+        //    reader = cmd.ExecuteReader();
+        //    return reader;
+        //}
 
 
     }

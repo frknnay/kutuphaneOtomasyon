@@ -17,11 +17,19 @@ namespace kutuphaneOtomasyon
             InitializeComponent();
         }
 
-        private DataBase mysql = new DataBase();
+        private DataBase db = new DataBase();
 
         private void Form1_Load(object sender, EventArgs e)
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmKitapEkle frmKitapEkle = new frmKitapEkle();
+            frmKitapEkle.ShowDialog();
+        }
+
+        
     }
 }
