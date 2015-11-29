@@ -26,8 +26,25 @@ namespace kutuphaneOtomasyon
 
         private void button1_Click(object sender, EventArgs e)
         {
-            frmKitapEkle frmKitapEkle = new frmKitapEkle();
-            frmKitapEkle.ShowDialog();
+            frmKitapEkle form = new frmKitapEkle();
+            form.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frmUyeEkle form = new frmUyeEkle();
+            form.ShowDialog();
+        }
+
+        private void btnCikis_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            frmUyeListele form = new frmUyeListele();
+            form.ShowDialog();
         }
 
         

@@ -59,6 +59,18 @@
     <Compile Include="frmKitapEkle.Designer.cs">
       <DependentUpon>frmKitapEkle.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmUyeEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUyeEkle.Designer.cs">
+      <DependentUpon>frmUyeEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUyeListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUyeListele.Designer.cs">
+      <DependentUpon>frmUyeListele.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -66,6 +78,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmKitapEkle.resx">
       <DependentUpon>frmKitapEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUyeEkle.resx">
+      <DependentUpon>frmUyeEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUyeListele.resx">
+      <DependentUpon>frmUyeListele.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -21,6 +21,7 @@ namespace kutuphaneOtomasyon
         private MySqlConnection conn;
         private MySqlCommand cmd;
         private MySqlDataReader reader;
+        private MySqlDataAdapter adapter;
 
         public void Open()
         {
@@ -37,6 +38,7 @@ namespace kutuphaneOtomasyon
             }
 
         }
+
         public void Close()
         {
             try
@@ -56,9 +58,16 @@ namespace kutuphaneOtomasyon
             cmd.Connection = conn;
             return cmd;
         }
+
         public MySqlDataReader Reader()
         {
             return reader;
+        }
+
+        public MySqlDataAdapter Adapter(string command)
+        {
+            adapter = new MySqlDataAdapter(command,conn);
+            return adapter;
         }
 
         //public MySqlDataReader Select(string column, string table)

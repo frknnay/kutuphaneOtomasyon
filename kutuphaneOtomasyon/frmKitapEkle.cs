@@ -62,7 +62,8 @@ namespace kutuphaneOtomasyon
             catch (MySqlException myEx)
             {
 
-                MessageBox.Show("Kayıt veritabanına eklenirken bir hata oluştu.\n{0}", myEx.Message);
+                string hata = string.Format("Kayıt veritabanına eklenirken bir hata oluştu.\n{0}", myEx.Message);
+                MessageBox.Show(hata);
             }
             finally
             {
