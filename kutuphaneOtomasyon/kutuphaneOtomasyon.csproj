@@ -59,6 +59,12 @@
     <Compile Include="frmKitapEkle.Designer.cs">
       <DependentUpon>frmKitapEkle.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmKiyapListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKiyapListele.Designer.cs">
+      <DependentUpon>frmKiyapListele.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmUyeEkle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +84,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmKitapEkle.resx">
       <DependentUpon>frmKitapEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKiyapListele.resx">
+      <DependentUpon>frmKiyapListele.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmUyeEkle.resx">
       <DependentUpon>frmUyeEkle.cs</DependentUpon>

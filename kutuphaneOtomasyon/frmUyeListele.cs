@@ -25,13 +25,20 @@ namespace kutuphaneOtomasyon
             veriGetir();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+       
+        private void btnCikis_Click(object sender, EventArgs e)
         {
+            this.Close();
+        }
+
+        private void btnUyeSil_Click(object sender, EventArgs e)
+        {
+
             if (dataGridView1.SelectedRows.Count <= 0)
             {
                 MessageBox.Show("Hiçbir üye seçilmedi.");
                 return;
-            } 
+            }
             int index = dataGridView1.SelectedCells[0].RowIndex;
             DataGridViewRow selected = dataGridView1.Rows[index];
             int uyeId = (int)selected.Cells["uye_id"].Value;
@@ -58,12 +65,6 @@ namespace kutuphaneOtomasyon
                 }
                 finally { db.Close(); }
             }
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void veriGetir()
@@ -89,9 +90,5 @@ namespace kutuphaneOtomasyon
             finally { db.Close(); }
         }
 
-        private void btnCikis_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
     }
 }
