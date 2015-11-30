@@ -25,7 +25,7 @@ namespace kutuphaneOtomasyon
             veriGetir();
         }
 
-       
+
         private void btnCikis_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -44,7 +44,7 @@ namespace kutuphaneOtomasyon
             int uyeId = (int)selected.Cells["uye_id"].Value;
             string uyeAdi = selected.Cells["Adı"].Value.ToString();
 
-            DialogResult cevap = MessageBox.Show(uyeAdi + " adlı üyeyi silmek istediğinizden emin misiniz?",
+            DialogResult cevap = MessageBox.Show("\"" + uyeAdi + "\" adlı üyeyi silmek istediğinizden emin misiniz?",
                 "Onay", MessageBoxButtons.YesNo);
             if (cevap == DialogResult.Yes)
             {
@@ -70,7 +70,8 @@ namespace kutuphaneOtomasyon
         private void veriGetir()
         {
             db.Open();
-            string command = "select uye_id, uye_adi as 'Adı', uye_soyadi as 'Soyadı',uye_okunan_kitap as 'Okuduğu Kitap Sayısı', uye_kayit_tarihi as 'Kayıt Tarihi' from uye";
+            string command = @"select uye_id, uye_adi as 'Adı', uye_soyadi as 'Soyadı',uye_okunan_kitap as 'Okuduğu Kitap Sayısı', 
+                uye_kayit_tarihi as 'Kayıt Tarihi' from uye";
             var adapter = db.Adapter(command);
             try
             {
@@ -89,6 +90,35 @@ namespace kutuphaneOtomasyon
             }
             finally { db.Close(); }
         }
+
+        private void toolStripStatusLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnUyeDuzenle_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count <= 0)
+            {
+                MessageBox.Show("Hiçbir üye seçilmedi.");
+                return;
+            }
+
+            int index = dataGridView1.SelectedCells[0].RowIndex;
+            DataGridViewRow selected = dataGridView1.Rows[index];
+
+            frmUyeDuzenle form = new frmUyeDuzenle();
+            form.UyeAdi = selected.Cells["Adı"].Value.ToString();
+            form.UyeSoyAdi = selected.Cells["Soyadı"].Value.ToString();
+            form.UyeId = (int)selected.Cells["uye_id"].Value;
+            form.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            veriGetir();
+        }
+
 
     }
 }

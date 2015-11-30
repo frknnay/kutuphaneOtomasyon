@@ -51,7 +51,7 @@
             // button5
             // 
             this.button5.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.button5.Image = global::kutuphaneOtomasyon.Properties.Resources.user_pencil;
+            this.button5.Image = global::kutuphaneOtomasyon.Properties.Resources.management_add;
             this.button5.Location = new System.Drawing.Point(486, 12);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(90, 105);
